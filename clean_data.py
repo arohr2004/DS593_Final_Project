@@ -21,8 +21,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-    chmod g+s /projectnb/cds593/593_arohr
-
 ###############################################################################
 #
 # from datasets import load_from_disk
