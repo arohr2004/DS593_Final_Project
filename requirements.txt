@@ -6,6 +6,7 @@ pandas
 pillow
 pyarrow
 requests
+streamlit
 tqdm
 transformers
 torch
