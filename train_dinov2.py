@@ -65,7 +65,7 @@ def main():
     print(f"Using device: {device}")
 
     print("Loading prepared dataset...")
-    dataset = load_from_disk("./cleaned_data")
+    dataset = load_from_disk("./augmented_data")
 
     dataset = dataset.with_transform(apply_transforms)
 
@@ -76,7 +76,7 @@ def main():
     criterion = nn.MSELoss() 
     optimizer = optim.AdamW(model.parameters(), lr=1e-3) 
 
-    epochs = 20
+    epochs = 5
     print("Starting Training...")
     
     for epoch in range(epochs):

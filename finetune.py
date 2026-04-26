@@ -57,7 +57,7 @@ def main():
     print(f"Using device: {device}")
 
     # 1. Load Data
-    dataset = load_from_disk("./cleaned_data")
+    dataset = load_from_disk("./augmented_data")
     dataset = dataset.with_transform(apply_transforms)
     
     train_loader = DataLoader(dataset["train"], batch_size=16, shuffle=True)
