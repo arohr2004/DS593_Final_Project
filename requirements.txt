@@ -17,7 +17,6 @@ filelock==3.16.1
 fonttools==4.62.1
 frozenlist==1.8.0
 fsspec==2026.2.0
-gmpy2==2.1.5
 h11==0.16.0
 hf-xet==1.4.3
 httpcore==1.0.9
@@ -35,17 +34,6 @@ multidict==6.7.1
 multiprocess==0.70.19
 networkx==3.8
 numpy==2.2.6
-nvidia-cublas-cu11==11.11.3.6
-nvidia-cuda-cupti-cu11==11.8.87
-nvidia-cuda-nvrtc-cu11==11.8.89
-nvidia-cuda-runtime-cu11==11.8.89
-nvidia-cudnn-cu11==9.1.0.70
-nvidia-cufft-cu11==10.9.0.58
-nvidia-curand-cu11==10.3.0.86
-nvidia-cusolver-cu11==11.4.1.48
-nvidia-cusparse-cu11==11.7.5.86
-nvidia-nccl-cu11==2.21.5
-nvidia-nvtx-cu11==11.8.86
 packaging==25.1.post1
 pandas==2.3.3
 pillow==11.3.1
@@ -70,7 +58,6 @@ torchaudio==2.7.1
 torchvision==0.22.1
 tqdm==4.67.3
 transformers==5.6.2
-triton==3.3.1
 typer==0.24.2
 typing_extensions==4.14.2
 tzdata==2026.1
