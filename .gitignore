@@ -18,3 +18,9 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+#model 
+*.pth
+
+#data 
+cleaned_data/

@@ -50,10 +50,12 @@ image_transform = transforms.Compose([
 ])
 
 def apply_transforms(examples):
-    # Convert HF PIL images to PyTorch tensors dynamically
-    examples["pixel_values"] = [image_transform(img.convert("RGB")) for img in examples["image"]]
-    examples["target_height"] = [float(h) for h in examples["height"]]
-    return examples
+    # Instead of modifying the existing dictionary, we create a new one 
+    # that ONLY contains the PyTorch tensors the model needs.
+    return {
+        "pixel_values": [image_transform(img.convert("RGB")) for img in examples["image"]],
+        "target_height": [torch.tensor(float(h), dtype=torch.float32) for h in examples["height"]]
+    }
 
 # ==========================================
 # 3. THE TRAINING LOOP
@@ -64,7 +66,7 @@ def main():
 
     print("Loading prepared dataset...")
     dataset = load_from_disk("./cleaned_data")
-    
+
     dataset = dataset.with_transform(apply_transforms)
 
     train_loader = DataLoader(dataset["train"], batch_size=32, shuffle=True)
@@ -74,7 +76,7 @@ def main():
     criterion = nn.MSELoss() 
     optimizer = optim.AdamW(model.parameters(), lr=1e-3) 
 
-    epochs = 5
+    epochs = 20
     print("Starting Training...")
     
     for epoch in range(epochs):
