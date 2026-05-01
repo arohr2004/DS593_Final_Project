@@ -30,4 +30,5 @@ augmented_data/
 # cache folders
 .hf-cache/
 .mpl-cache/
-EDA/.mpl-cache
+EDA/.mpl-cache.hf-cache/
+.mpl-cache/
