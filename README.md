@@ -44,6 +44,7 @@ This project trains a vision model to **predict a person’s height (in centimet
   - Error analysis utilities and reports for model performance.
 - `EDA/`, `Plots/`, `Mean_baseline/`, `CNN_baseline/`
   - Additional exploration, baselines, and figures (project-specific experimentation).
+- `Deliverables/` contains the Write-up & Presentation	
 
 ---
 
