@@ -36,5 +36,5 @@ plt.ylim(0, df['MSE'].max() * 1.15)
 
 # 8. Adjust layout and save the plot
 plt.tight_layout()
-plt.savefig('mse_comparison_updated.png')
+plt.savefig('MSE_comparison/mse_comparison_updated.png')
 plt.show()

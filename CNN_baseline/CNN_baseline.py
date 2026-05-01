@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PLOT_DIR = SCRIPT_DIR / "plots"
+PLOT_DIR = SCRIPT_DIR 
 CSV_PATH = SCRIPT_DIR / "cnn_mse_history.csv"
 
 
