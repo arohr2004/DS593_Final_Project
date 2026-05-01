@@ -7,6 +7,7 @@ venv/
 __pycache__/
 *.pyc
 
+
 # VS Code
 .vscode/
 
@@ -25,3 +26,8 @@ __pycache__/
 #data 
 cleaned_data/
 augmented_data/
+
+# cache folders
+.hf-cache/
+.mpl-cache/
+EDA/.mpl-cache
